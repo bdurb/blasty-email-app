@@ -1,8 +1,8 @@
 import React from 'react';
 
-const landing = () => {
+const Landing = () => {
   return (
-    <div>
+    <div style={{ textAlign: 'center'}}>
       <h1>
         Blasty Feedback
       </h1>
@@ -10,3 +10,5 @@ const landing = () => {
     </div>
   );
 };
+
+export default Landing;
