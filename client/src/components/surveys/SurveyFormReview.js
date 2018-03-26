@@ -2,6 +2,7 @@ import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
 import formFields from './formFields';
+import { withRouter } from 'react-router-dom';
 import * as actions from '../../actions';
 
 const SurveyFormReview = ({ onCancel, formValues, submitSurvey }) => {
@@ -18,7 +19,7 @@ const SurveyFormReview = ({ onCancel, formValues, submitSurvey }) => {
 
   return (
     <div>
-      <h5>Review some things</h5>
+      <h5>Please Review Your Survey Before Sending</h5>
       {reviewFields}
       <button className="yellow darken-3 white-text btn-flat" onClick={ onCancel }>
         Back
